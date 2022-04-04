@@ -205,7 +205,7 @@ for f, i in filters_.items():
 
 st.session_state.filteredrecords = filteredrecords
 
-#st.write(filteredrecords)
+st.write(filteredrecords)
 
 
 st.header(f"{len(st.session_state.filteredrecords)} Records Post Filtering")
