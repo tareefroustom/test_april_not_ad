@@ -208,12 +208,12 @@ st.session_state.filteredrecords = filteredrecords
 st.write(filteredrecords)
 
 
-st.header(f"{len(st.session_state.filteredrecords)} Records Post Filtering")
+st.header(f"{len(filteredrecords)} Records Post Filtering")
 st.header(f"{len(st.session_state.records_list)} Total Number of Users")
 
 
 finallistofemails = []
-for record in st.session_state.filteredrecords:
+for record in filteredrecords:
     finallistofemails.append(record["Email"])
 
 st.session_state.finallistofemails = finallistofemails
