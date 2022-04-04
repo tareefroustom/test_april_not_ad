@@ -184,17 +184,17 @@ for filter_name, filter in st.session_state.filters.items():
     except:
         pass
 
-for filter_name, filter in st.session_state.filters.items():
-    filter__name = filter_name
-    try:
-        if filter_name == "id":
-            filter_name = st.sidebar.multiselect(
-               f'{filter_name}',
-                set(filter),set(filter))
+#for filter_name, filter in st.session_state.filters.items():
+#    filter__name = filter_name
+#    try:
+#        if filter_name == "id":
+            #filter_name = st.sidebar.multiselect(
+            #   f'{filter_name}',
+            #    set(filter),set(filter))
 
-            filters_[filter__name] = filter_name
-    except:
-        pass
+            #filters_[filter__name] = filter_name
+ #   except:
+ #       pass
 
 filteredrecords = []
 for f, i in filters_.items():
