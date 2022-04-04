@@ -200,12 +200,12 @@ filteredrecords = []
 for f, i in filters_.items():
 
     for record in st.session_state.records_list:
-        if record[f] in i:
+        if record[f] in i and record not in filteredrecords:
             filteredrecords.append(record)
 
 st.session_state.filteredrecords = filteredrecords
 
-st.write(filteredrecords)
+#st.write(filteredrecords)
 
 
 st.header(f"{len(filteredrecords)} Records Post Filtering")
