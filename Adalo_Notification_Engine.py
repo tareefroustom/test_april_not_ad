@@ -243,4 +243,4 @@ with col2:
             }
 
             response = requests.post(url, json=data, headers=headers)
-            st.text(response.status_code)
+            #st.text(response.status_code)
